@@ -6,19 +6,24 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        serif: ["Lora", "serif"],
+      },
       colors: {
-        indigo: {
-          50: '#f0f7ff',
-          100: '#e0e7ff',
-          200: '#c7d2fe',
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
-        },
+        'brand-green': 'oklch(44.31% 0.101 160.06)',
+        'brand-green-dark': 'oklch(33.15% 0.082 159.98)',
+        'brand-brown': 'oklch(45.03% 0.053 60.11)',
+        'brand-mist': 'oklch(95.53% 0.009 240.11)',
+        'brand-beige': 'oklch(90.13% 0.03 75.11)',
+        'brand-sky': 'oklch(79.52% 0.044 220.1)',
+        'brand-cream': 'oklch(98.7% 0.017 10.2)',
+      },
+      backgroundImage: {
+        'forest-bg': "url('/forest.jpg')", // Use your actual image path
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
     },
   },
